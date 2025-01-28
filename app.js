@@ -2,6 +2,8 @@ const ddd = document.getElementById('ddd')
 const phoneNum = document.getElementById("phone-number")
 const message = document.getElementById("message")
 const btn = document.getElementById("send")
+const linkField = document.getElementById("input-show-link")
+
 let arr = []
 const insert = "%"
 
@@ -20,6 +22,8 @@ btn.onclick= ()=>{
     return
   } else {
     console.log(link)
-    window.location.assign(link)
+    linkField.innerText = link
+    // window.location.assign(link)
+    window.open(link, '_blank')
   }
 }

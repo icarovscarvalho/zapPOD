@@ -9,6 +9,7 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -54,7 +55,6 @@ body{
     border-radius: 7px;
     border: 2px solid #015b01;
     outline: 0;
-    scrollbar-width: 30px;
 }
 
 #phone-number{
@@ -86,4 +86,51 @@ button{
     &:active{
         background-color: #0c870c;
     }
+}
+
+#show-link-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    background-color: #2EB441;
+    box-shadow: 3px 3px 5px #0000019f;
+    color: #fff;
+}
+
+#input-show-field{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #015b01;
+    outline: 0;
+    overflow: hidden;
+}
+
+#input-show-link{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
 }
